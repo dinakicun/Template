@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Template_4333"
         mc:Ignorable="d"
-        Title="_4333_Sagitova" Height="450" Width="400">
-    <Grid Background="LightPink">
-        <Label Content="Сагитова Дина 4333 19 лет" FontSize="30"></Label>
+        Title="_4333_Sagitova" Height="550" Width="500">
+    <Grid Background="Lavender">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="Сагитова Дина 4333 19 лет" FontSize="30" HorizontalAlignment="Center" Height="50" Grid.Row="0" ></Label>
+        <Button Content="Импорт данных" Width="150" Height="30" HorizontalAlignment="Center" Click="Button_Click" Grid.Row="1"></Button>
+        <Button Content="Экспорт в Excel" Width="150" Height="30" HorizontalAlignment="Center" Click="Button_Click_1" Grid.Row="2"></Button>
     </Grid>
 </Window>
